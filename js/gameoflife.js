@@ -1,4 +1,4 @@
-function seed(arguments) {
+function seed(x,y) {
 
   return arguments; 
 
@@ -63,6 +63,7 @@ const printCells = (state) => {
 
 };
 
+
 const getNeighborsOf = ([x, y]) => {
 
   return [x,y];
@@ -85,6 +86,7 @@ const getLivingNeighbors = (cell, state) => {
     
 };
 
+
 const willBeAlive = (cell, state) => {
 
   let element = this.contains(state);
@@ -95,6 +97,7 @@ const willBeAlive = (cell, state) => {
 
   }
 };
+
 
 const calculateNext = (state) => {
 
@@ -110,6 +113,7 @@ const calculateNext = (state) => {
   }
 
 };
+
 
 const iterate = (state, iterations) => {
 
@@ -183,5 +187,5 @@ const startPatterns = {
   exports.printCells = printCells;
   exports.startPatterns = startPatterns;
   exports.iterate = iterate;
-  exports.main = main;
+  exports.main = main;  
   
